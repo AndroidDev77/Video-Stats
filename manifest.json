@@ -1,0 +1,40 @@
+{
+   "author": "AppModilla",
+   "background": {
+      "persistent": false,
+      "scripts": [ "src/background.js" ]
+   },
+   "content_scripts": [ {
+      "css": [ "src/css/_vars.css", "src/css/positions.css", "src/css/views/monitor.css" ],
+      "js": [ "content.js" ],
+      "matches": [ "https://stadia.google.com/*", "https://*.twitch.tv/*", "https://www.youtube.com/*", "https://www.netflix.com/*", "https://tv.apple.com/us/*", "https://play.hbomax.com/episode/*" ]
+   } ],
+   "description": "Small and unobtrusive Overlay for displaying Video information from streamed content",
+   "homepage_url": "https://github.com/AndroidDev77",
+   "icons": {
+      "128": "images/icon-144x144.png",
+      "16": "images/icon-16x16.png",
+      "32": "images/icon-32x32.png",
+      "48": "images/icon-72x72.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg9IeCvqopXFB0qFet9b5f1ZULZNSVbWttOWgEMIVWMDsrY8sRIUhRStkqqtdFVFbf/dHRRii6k65e74/wFVFksWQF31N5ELXkZ9OlD2wqimYmcrZ7ff8/mMWqKKp0UbBX5uBNv2Qop8fzlQ8fBiqqzEYMdMRaZd1gWkUYgopeMCZotPXD8YhagqhyOz+dfAfizfj0zIsII6xWsCy5j5xQrlfFXRtCaZvJvzRZNQ7tmIZVLV6mVNGTNMPUwIMSuMt0CX7jH/CT7kLhwpgjd8QZf+AU9+H4IWNyw8Z5thtOtgt6IpnG8W2dxxJCId2OF6RktbBHEwCDHEtMmXj2VY8PQIDAQAB",
+   "manifest_version": 2,
+   "name": "Video Stats",
+   "omnibox": {
+      "keyword": "Video Stats"
+   },
+   "page_action": {
+      "default_icon": {
+         "16": "images/icon-16x16.png",
+         "24": "images/icon-32x32.png",
+         "32": "images/icon-32x32.png"
+      },
+      "default_popup": "src/popup.html",
+      "default_title": "Video Stats"
+   },
+   "permissions": [ "declarativeContent", "storage", "https://stadia.google.com/*", "https://*.twitch.tv/*", "https://www.youtube.com/*", "https://www.netflix.com/*", "https://tv.apple.com/us/*", "https://play.hbomax.com/episode/*" ],
+   "short_name": "Video Stats",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0",
+   "web_accessible_resources": [ "src/*" ]
+}

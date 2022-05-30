@@ -1,0 +1,157 @@
+@import '../_vars.css';
+@import '../base.css';
+@import '../fonts.css';
+@import '../buttons.css';
+@import '../lists.css';
+@import '../selectbox.css';
+
+.extension {
+  display: flex;
+  flex-direction: column;
+}
+/* HEADER */ 
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.header h1 {
+  flex: 1;
+}
+.header p {
+  margin: 28px 0 0;
+  color: var(--colour-pink-tint-light);
+  font-size: var(--font-size-s);
+}
+/* OPTIONS */
+.options .monitors {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: var(--pad-s);
+}
+.options .monitors ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.options .monitors .right {
+  padding-left: var(--pad-s);
+}
+/* CHECKBOXES */
+.options .container {
+  display: block;
+  position: relative;
+  padding-left: 42px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.options .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.options .checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: var(--colour-base-white);
+  border-radius: var(--radius);
+  border: solid 2px var(--colour-dark-tint);
+}
+.options .container:hover input ~ .checkmark {
+  background-color: var(--colour-white-tint);
+}
+.options .container input:checked ~ .checkmark {
+  background-color: var(--colour-base-pink);
+  border: solid 2px transparent;
+}
+.options .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.options .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.options .container .checkmark:after {
+  left: 8px;
+  top: 1px;
+  width: 7px;
+  height: 16px;
+  border: solid var(--colour-base-white);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* BUTTONS */
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.buttons button {
+  flex: 1;
+}
+.buttons button:first-child {
+  margin-right: 4px;
+}
+.buttons button:last-child {
+  margin-left: 4px;
+}
+.buttons button.apply {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* LINKS */ 
+.links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+.links .link {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-top: var(--pad-s);
+  text-decoration: none;
+}
+.links .link p {
+  font-size: var(--font-size-s);
+}
+.links .link:first-child {
+  text-align: left;
+  padding-right: var(--pad-l);
+}
+.links .link:last-child {
+  text-align: right;
+  padding-left: var(--pad-l);
+}
+.links .icon {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding:0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.links .icon.world {
+  left: 15%;
+  background-image: url('../../images/world.png');
+}
+.links .icon.discord {
+  left: 40%;
+  background-image: url('../../images/discord.png');
+}
+.links .icon.kofi {
+  left: 55%;
+  background-image: url('../../images/kofi.png');
+}

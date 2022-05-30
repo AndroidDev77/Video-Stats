@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="./css/views/popup.css" rel="stylesheet">
+  </head>
+  <body class="extension">
+    <header class="header">
+      <h1>Stream Monitor</h1> 
+      <p id="version">v00.00.00</p> 
+    </header>
+    <h2>Position</h2>
+    <section class="display">
+      <select id="display_position">
+        <option value="top">Top of screen</option>
+        <option value="bottom">Bottom of screen</option>
+        <option value="left">Left of screen</option>
+        <option value="right">Right of screen</option>
+        <option value="top left">Top Left of screen</option>
+        <option value="top right">Top Right of screen</option>
+        <option value="bottom left">Bottom Left of screen</option>
+        <option value="bottom right">Bottom Right of screen</option>
+      </select>
+    </section>
+    <section class="options">    
+      <h2>Monitors</h2>
+      <div class="monitors">
+        <ul class="left">
+          <li>
+            <label for="resolution" class="container">Resolution
+              <input id="resolution" name="resolution" type="checkbox" value="Resolution (RES)" checked/>
+              <span class="checkmark"></span>
+            </label>
+          </li>
+          <li>
+             <label for="frame_rate" class="container">Frame Rate
+              <input id="frame_rate" name="frame_rate" type="checkbox" value="Frame Rate (FPS)" checked/>
+              <span class="checkmark"></span>
+            </label>
+          </li>
+          <li>
+            <label for="frame_drop" class="container">Frame Drop
+              <input id="frame_drop" name="frame_drop" type="checkbox" value="Frame Drop (FDPS)" checked/>
+              <span class="checkmark"></span>
+            </label>
+          </li>
+        </ul>
+        <ul class="right">
+          <li>
+            <label for="data_usage" class="container">Data Usage
+              <input id="data_usage" name="data_usage" type="checkbox" value="Data Usage (DATA)" checked/>
+              <span class="checkmark"></span>
+            </label>
+          </li>
+          <li>
+            <label for="time" class="container">Time
+              <input id="time" name="time" type="checkbox" value="Time (TIME)" checked/>
+              <span class="checkmark"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="buttons">
+      <button id="apply_monitor_options">Apply</button>
+      <button id="reset_monitor_options">Reset</button>
+    </section>
+    <section class="buttons">
+      <button id="hide_monitor_options">Hide All</button>
+      <button id="show_monitor_options">Show All</button>
+    </section>
+    <footer class="links">
+      <a class="link" href="https://stream-monitor.somecode.dev">
+        <div class="icon world"></div>
+        <p>Visit our site</p>
+      </a>
+      <a class="link" href="https://discord.gg/JHT8A8u">
+        <div class="icon discord"></div>
+        <p>Join the Discord</p>
+      </a>
+      <a class="link" href="https://ko-fi.com/bassforce86">
+        <div class="icon kofi"></div>
+        <p>Buy us a coffee</p>
+      </a>
+    </footer>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+:root {
+    --pad: 20px;
+    --pad-s: 12px;
+    --pad-l: 24px;
+
+    --radius: 8px;
+    
+    /* FONT */
+    --font-family:  'Roboto', sans-serif;
+    --font-size-s: 12px;
+    --font-size: 16px;
+    --font-size-l: 28px;
+    --line-height-s: 20px;
+    --line-height: 24px;
+    --line-height-l: 32px;
+    --letter-spacing-s: 0.004em;
+    --letter-spacing: 0.004em;
+    --letter-spacing-l: 0.014em;
+    /* COLOURS */
+    --text-colour: #0F0E17;
+    --link-colour: #E53170;
+
+    --colour-base-white: #FFFFFF;
+    --colour-base-black: #000000;
+    --colour-base-dark: #0F0E17;
+    --colour-base-pink: #E53170;
+    --colour-base-orange: #FF8906; 
+
+    --colour-dark-tint: #3F3E45;
+    --colour-dark-tint-light: #6F6E74;
+    --colour-pink-tint: #EA5A8D;
+    --colour-pink-tint-light: #EF83A9;
+    --colour-orange-tint: #FFA138;
+    --colour-orange-tint-light: #FFB86A;
+    --colour-white-tint: #F8F8F8;
+
+    --button-background: linear-gradient(252.03deg, #FF8906 33.79%, #F76B2B 100%);
+}

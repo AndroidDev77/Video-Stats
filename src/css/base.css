@@ -1,0 +1,12 @@
+body {
+  max-width: 384px;
+  width: 384px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-colour);
+  padding: 0 20px;
+}

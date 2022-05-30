@@ -1,0 +1,75 @@
+#stream_monitor.top,
+#stream_monitor.bottom {
+  width: 100%;
+  height: auto;
+}
+#stream_monitor.left,
+#stream_monitor.right {
+  width: auto;
+  height: 100vh;
+}
+#stream_monitor.top { top: 0; align-items: flex-start !important;}
+#stream_monitor.bottom { bottom: 0; align-items: flex-end !important; }
+#stream_monitor.left { left: 0; align-items: center; }
+#stream_monitor.right { right: 0; align-items: center; }
+
+#stream_monitor #monitors.container {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  height: fit-content;
+  opacity: 0.6;
+  background-color: var(--colour-base-black);
+  padding: var(--pad-s) 0;
+}
+
+#stream_monitor.top #monitors.container {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+#stream_monitor.bottom #monitors.container {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+#stream_monitor.left #monitors.container {
+  flex-direction: column;
+  border-top-left-radius: 0;
+  border-top-right-radius: var(--radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: var(--radius);
+}
+#stream_monitor.right #monitors.container {
+  flex-direction: column;
+  border-top-right-radius: 0;
+  border-top-left-radius: var(--radius);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: var(--radius);
+}
+#stream_monitor.top.left #monitors.container{
+  flex-direction: column;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: var(--radius);
+}
+#stream_monitor.top.right #monitors.container{
+  flex-direction: column;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: var(--radius);
+}
+#stream_monitor.bottom.left #monitors.container{
+  flex-direction: column;
+  border-top-left-radius: 0;
+  border-top-right-radius: var(--radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#stream_monitor.bottom.right #monitors.container{
+  flex-direction: column;
+  border-top-right-radius: 0;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}

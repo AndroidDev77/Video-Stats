@@ -1,0 +1,35 @@
+@import '../_vars.css';
+@import '../fonts.css';
+@import '../positions.css';
+
+#stream_monitor {
+  position: fixed;
+  display: flex;
+  font-size: var(--font-size);
+  z-index: 3000;
+  justify-content: center;
+  pointer-events: none;
+}
+#stream_monitor #monitors .monitor {
+  display: inline-flex;
+  color: white;
+  padding: 0 var(--pad);
+}
+#stream_monitor #monitors .monitor .name { width: 48px; }
+
+#stream_monitor #monitors .monitor .data { font-weight: 700; }
+
+/* LIGHT THEME */
+#stream_monitor.light #monitors.container {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  opacity: 0.6;
+  background-color: var(--colour-white-tint);
+  padding: var(--pad-s) 0;
+}
+#stream_monitor.light #monitors .monitor {
+  display: inline-flex;
+  color: var(--colour-base-black);
+  padding: 0 var(--pad);
+}

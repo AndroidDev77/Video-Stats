@@ -1,0 +1,29 @@
+
+/* SELECT BOXES */
+select {
+  padding: var(--pad-s) var(--pad);
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 110%;
+  margin: 0;
+  border: 2px solid var(--text-colour);
+  border-radius: 8px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--colour-base-white);
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxOCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xNS44MTcgMC42MTczNjhMOC45OTkzNiA3LjA5MTUyTDIuMTgyNjUgMC42MjcyOTFDMi4wOTQ3IDAuNTQzODMxIDEuOTkxMTYgMC40Nzg1MTIgMS44Nzc5NiAwLjQzNTA2NEMxLjc2NDc2IDAuMzkxNjE2IDEuNjQ0MTIgMC4zNzA4OSAxLjUyMjkxIDAuMzc0MDY4QzEuNDAxNyAwLjM3NzI0NyAxLjI4MjMgMC40MDQyNjggMS4xNzE1NCAwLjQ1MzU5QzEuMDYwNzcgMC41MDI5MTEgMC45NjA4MDQgMC41NzM1NjcgMC44NzczNDQgMC42NjE1MjNDMC43MDg3ODggMC44MzkxNTcgMC42MTc3MDEgMS4wNzY0NyAwLjYyNDEyMSAxLjMyMTI3QzAuNjI3MyAxLjQ0MjQ4IDAuNjU0MzIyIDEuNTYxODcgMC43MDM2NDQgMS42NzI2NEMwLjc1Mjk2NCAxLjc4MzQxIDAuODIzNjIgMS44ODMzNyAwLjkxMTU3NSAxLjk2NjgzTDkuMDAxMTIgOS42MzYzTDE3LjA4OCAxLjk1NjAxQzE3LjE3NjIgMS44NzI2NCAxNy4yNDcxIDEuNzcyNjggMTcuMjk2NyAxLjY2MTg2QzE3LjM0NjIgMS41NTEwNCAxNy4zNzM0IDEuNDMxNTMgMTcuMzc2NyAxLjMxMDE4QzE3LjM4IDEuMTg4ODMgMTcuMzU5NCAxLjA2ODAyIDE3LjMxNTkgMC45NTQ2NzRDMTcuMjcyNCAwLjg0MTMyNyAxNy4yMDcgMC43Mzc2NjcgMTcuMTIzNCAwLjY0OTYzM0MxNy4wMzk4IDAuNTYxNTk5IDE2LjkzOTcgMC40OTA5MTkgMTYuODI4OCAwLjQ0MTY0QzE2LjcxNzggMC4zOTIzNjIgMTYuNTk4MyAwLjM2NTQ1MyAxNi40NzY5IDAuMzYyNDU2QzE2LjM1NTUgMC4zNTk0NTkgMTYuMjM0OCAwLjM4MDQzMiAxNi4xMjE1IDAuNDI0MTc0QzE2LjAwODMgMC40Njc5MTYgMTUuOTA0OCAwLjUzMzU2NyAxNS44MTcgMC42MTczNjhaIiBmaWxsPSIjMEYwRTE3Ii8+DQo8L3N2Zz4=');
+  background-repeat: no-repeat, repeat;
+  background-position: right .8em top 50%;
+  background-size: .8em auto;
+}
+select:hover {
+  border-color: var(--colour-base-black);
+}
+select:focus {
+  border-color: var(--text-colour);
+  box-shadow: 0 0 1px 1px var(--colour-dark-tint);
+  box-shadow: 0 0 0 1px -moz-mac-focusring;
+  color: var(--colour-base-dark); 
+  outline: none;
+}
